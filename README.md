@@ -9,7 +9,7 @@ This model is then compared to an Azure AutoML run.
 This dataset contains data about bank marketing campaigns, it's a classfication exercise to predict if the client will subscribe to a term deposit with the bank. One starts to create and optimize an Scikit Learn Logistic Regression ML pipeline with the HyperDrive tool to optimize the hyperparamaters.
 Then one will be comparing with the Auto ML results.
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The AutoML best performance was achieved with a pipeline MaxAbsScaler LightGBM (0.9152), first iteration 31s.
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
