@@ -28,4 +28,5 @@ The AutoML best performance was achieved with a pipeline MaxAbsScaler LightGBM (
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
 ## Proof of cluster clean up
-![alt text](https://github.com/Jocker1980/AzureML_Engineer_Nanodegree/blob/main/Compute_target_del.PNG)
+![alt text](https://github.com/Jocker1980/AzureML_Engineer_Nanodegree/blob/main/Images/Compute_target_del.PNG)
+
