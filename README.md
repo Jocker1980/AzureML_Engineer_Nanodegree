@@ -15,6 +15,7 @@ The AutoML best performance was achieved with a pipeline MaxAbsScaler LightGBM (
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 The pipeline architecture is the following:
+
 ![alt text](https://github.com/Jocker1980/AzureML_Engineer_Nanodegree/blob/main/Images/ml-pipeline.png)
 
 
