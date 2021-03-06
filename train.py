@@ -18,7 +18,6 @@ URL="https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebo
 ds = TabularDatasetFactory.from_delimited_files(path=URL)
 
 
-
 def clean_data(data):
     # Dict for cleaning data
     months = {"jan":1, "feb":2, "mar":3, "apr":4, "may":5, "jun":6, "jul":7, "aug":8, "sep":9, "oct":10, "nov":11, "dec":12}
@@ -45,7 +44,7 @@ def clean_data(data):
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
     return x_df, y_df
-    
+
 
 x, y = clean_data(ds)
 
