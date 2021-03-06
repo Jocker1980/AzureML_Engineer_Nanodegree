@@ -9,10 +9,15 @@ This model is then compared to an Azure AutoML run.
 This dataset contains data about bank marketing campaigns, it's a classfication exercise to predict if the client will subscribe to a term deposit with the bank. One starts to create and optimize an Scikit Learn Logistic Regression ML pipeline with the HyperDrive tool to optimize the hyperparamaters.
 Then one will be comparing with the Auto ML results.
 
+The Hyperdrive best performance was achieved with a pipeline MaxAbsScaler LightGBM (0.9170), 57s.
 The AutoML best performance was achieved with a pipeline MaxAbsScaler LightGBM (0.9152), first iteration 31s.
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+The pipeline architecture is the following:
+![alt text](https://github.com/Jocker1980/AzureML_Engineer_Nanodegree/blob/main/Images/ml-pipeline.png)
+
+
 
 **What are the benefits of the parameter sampler you chose?**
 
