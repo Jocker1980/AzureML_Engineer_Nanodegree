@@ -6,7 +6,7 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-This dataset contains data about bank marketing campaigns, it's a classfication exercise to predict if the client will subscribe to a term deposit with the bank. One starts to create and optimize an Scikit Learn Logistic Regression ML pipeline with the HyperDrive tool to optimize the hyperparamaters.
+This dataset contains data about bank marketing campaigns, it's a binary classfication exercise to predict if the client will subscribe to a term deposit with the bank. One starts to create and optimize an Scikit Learn Logistic Regression ML pipeline with the HyperDrive tool to optimize the hyperparamaters.
 Then one will be comparing with the Auto ML results.
 
 The Hyperdrive best performance was achieved with a pipeline Logistic Regression (0.9170), 57s.
@@ -29,7 +29,7 @@ The hyperparameter sampler selected is RandomParameterSampler.
 A Random Search offer the benefit of the speed with a result often very close to the Grid Search who explore the complete parameter space.
 
 **What are the benefits of the early stopping policy you chose?**
-The Early Stopping Policy selected is BanditPolicy
+The Early Stopping Policy selected is BanditPolicy. 
 An early stopping policy is used to automatically terminate poorly performing runs to improve computational efficiency.
 
 ## AutoML
@@ -57,7 +57,8 @@ The difference on the accuracy metrics is negligeable. However this metric certa
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 The data set is higly imbalanced that is an issue to get the best model when one uses HyperDrive. Using specific package to overcome this for HyperDrive. AutoML can detect and handle imbalanced data sets.
 
-I did not see in the HyperDrive architecture, the data standardization step. 
+I did not see in the HyperDrive architecture, the data standardization step.
+It is not clear to me for the moment how HyperDrive or AutoML assess the overfitting.
 
 In my opinion the part where a MLOps can really do the difference is in the feature engineering steps. By understanding more the contexte of the data one can be creative and generate new features, that are out of automated mathematical transforamtions. Domain knowledge expertise often make the difference.
 
